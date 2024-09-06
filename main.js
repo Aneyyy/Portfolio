@@ -12,6 +12,8 @@ form.addEventListener('submit', function (e){
     const imc= vlPeso/vlAltura ** 2;
   resultado.textContent = `Seu IMC é ${imc.toFixed(1)} ${getClassImc(imc)}`;    
 
+  if(vlPeso == 0||vlAltura== 0) resultado.textContent ="Preencha ambos os valores(Altura e Peso)";
+
 });
 
 
